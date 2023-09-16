@@ -1,0 +1,57 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid;
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.bio-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 180vh;
+}
+
+.greeting {
+  background-color: blue;
+  color: #fff;
+  padding: 5px 15px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.main-caption {
+  font-size: 2.5rem;
+}
+
+button {
+  padding: 5px 10px;
+  font-weight: bold;
+  background-color: blue;
+  border: none;
+  outline: none;
+  box-shadow: 3px 5px red;
+  color: #fff;
+}
+
+
