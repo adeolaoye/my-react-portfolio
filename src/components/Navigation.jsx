@@ -1,14 +1,16 @@
-import React from 'react'
-import {RiMenu2Fill} from 'react-icons/ri'
-
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../App.css'
 
 const Navigation = () => {
     return (
-        <div className='header-wrapper'>
-            <div></div>
-            <h1 className='logo'>olaDEV</h1>
-            <span  className='menu-icon'><RiMenu2Fill /></span>
-        </div>
+        <nav>
+        <ul className='nav-wrapper'>
+        <li><Link to='/'>Home</Link></li>
+        <li><Link to='/projects'>Projects</Link></li>
+        <li><Link to='/contact'>Contact</Link></li>
+      </ul> 
+      </nav>
     )
 }
 

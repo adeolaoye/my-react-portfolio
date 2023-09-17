@@ -29,7 +29,11 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 180vh;
+  height: 250vh;
+}
+
+.bio-info {
+  padding: 0 10px;
 }
 
 .greeting {
@@ -52,6 +56,20 @@ button {
   outline: none;
   box-shadow: 3px 5px red;
   color: #fff;
+}
+
+/* navigation */
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  list-style-type: none;
+}
+
+.footer-wrapper {
+  position: absolute;
+  bottom: 0;
 }
 
 
