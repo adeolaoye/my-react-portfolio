@@ -1,5 +1,5 @@
 import UnitProject from '../components/UnitProject';
-import projectLinks from '../components/projectLinks';
+import projectLinks from '../components/projectLinks.json';
 
 const Projects = () => {
   return (
