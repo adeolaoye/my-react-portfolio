@@ -2,7 +2,6 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
 }
 
 * {
@@ -15,18 +14,122 @@
 
 .menu-icon {
   font-size: 24px;
-  
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2000;
+}
+
+.logo-link {
+  color: black;
+  text-decoration: none;
 }
 
 .icon-menu-wrapper {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.5em;
+  color: inherit;
+  cursor: pointer;
+  z-index: 2000;
 }
 
-.header-wrapper {
+@media (min-width: 750px) {
+  .icon-menu-wrapper {
+    display: none;
+  }
+}
+
+/* menu modal */
+.modal-container {
+  position: fixed;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  border-bottom: 1px solid;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  transition: all 0.3s ease-in-out 0s;
+  z-index: 200;
+  background-color: aqua;
+}
+
+.full-modal-container {
+  height: 100vh;
+}
+
+.modal-content {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  height: 40%;
+  font-size: 1.75rem;
+  font-weight: 900;
+  transition: all 0.5s ease 0s;
+  z-index: 500;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.full-modal-content {
+  display: flex;
+}
+
+@media (min-width: 750px) {
+  .modal-container {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 40%;
+    height: auto;
+    transition: none;
+    background-color: #fff;
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: 900;
+    transition: none;
+  }
+
+  .modal-container a {
+    padding: 0.5em 0.75em;
+    color: inherit;
+  }
+}
+
+  @media (orientation: landscape) {
+    .modal-content {
+      justify-content: space-around;
+      font-weight: 400;
+      height: 60%;
+    }
+  }
+
+.header-wrapper {
+  position: relative;
+  height: 4em;
+  border-bottom: 2px solid;
+  z-index: 1000;
+  /* display: flex; */
+  /* align-items: center; */
 }
 
 .photo {
@@ -41,6 +144,7 @@
   justify-content: space-around;
   align-items: center;
   height: 250vh;
+  padding: 100px 0;
 }
 
 .bio-info {
@@ -99,8 +203,46 @@ button {
 }
 
 .footer-wrapper {
-  position: absolute;
-  bottom: 0;
+  text-align: center;
 }
 
+/* projects */
+
+.projects-header {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 20px;;
+}
+
+.unit-project-card {
+  height: 320px;
+  width: 320px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  position: relative;
+  font-size: 0.5em;
+  margin: 1em;
+  transition: all 0.2s ease-out 0s;
+  box-shadow: rgb(34 15 108 / 9%) 3px 7px 15px 2px;
+  background-color: aqua;
+}
+
+.unit-project-card:hover {
+  transform: scale(1.05);
+  box-shadow: rgb(34 15 108 / 9%) 0px 28px 30px 8px;
+}
+
+.demo-git-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.live-tab, .github-tab {
+  background-color: skyblue;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
 

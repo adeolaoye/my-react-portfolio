@@ -4,14 +4,8 @@ import projectLinks from '../components/projectLinks';
 const Projects = () => {
   return (
     <div id='projects'>
-      {' '}
-      <span
-        className='section-header sm-font'
-        style={{ lineHeight: 'initial' }}
-      >
-        what I have been working on
-      </span>
-      <h2>Projects</h2>
+    
+      <h2 className='projects-header'>Projects</h2>
       <div
         style={{
           height: 'auto',

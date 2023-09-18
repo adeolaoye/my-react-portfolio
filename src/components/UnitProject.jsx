@@ -1,13 +1,8 @@
 import { BsArrowRight } from 'react-icons/bs';
 
-const UnitProject = ({ id, title, src, url }) => {
+const UnitProject = ({ id, title, src, url, gitUrl }) => {
   return (
-    <a
-      style={{ textDecoration: 'none', color: 'inherit' }}
-      href={url}
-      target='_blank'
-      rel='noreferrer'
-    >
+    
       <div className='unit-project-card'>
         <h2
           style={{
@@ -31,11 +26,30 @@ const UnitProject = ({ id, title, src, url }) => {
           src={src}
           alt={title}
         />
-        <div className='project-arrow-icon'>
-          <BsArrowRight style={{ fontSize: '2.5em', color: '#fff' }} />
+        <div className='demo-git-wrapper'>
+            <div className='live-tab'>
+                <a
+                    style={{ textDecoration: 'none', color: 'inherit' }}
+                    href={url}
+                    target='_blank'
+                    rel='noreferrer'
+                >
+                    Live Demo
+                </a>
+            </div>
+            <div className='github-tab'>
+                <a
+                    style={{ textDecoration: 'none', color: 'inherit' }}
+                    href={gitUrl}
+                    target='_blank'
+                    rel='noreferrer'
+                >
+                    GitHub Repo
+                </a>
+            </div>
         </div>
       </div>
-    </a>
+    
   );
 };
 
