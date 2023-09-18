@@ -1,20 +1,20 @@
 import React, {useState} from 'react'
-import {RiMenu2Fill} from 'react-icons/ri'
-import MobileMenu from './MobileMenu'
-
+import {Link} from 'react-router-dom'
+import Hamburger from './Hamburger';
+import Navigation from './Navigation';
 
 const Header = () => {
-    const [isMenuClicked, setIsMenuClicked] = useState(true)
-
-    const handleClick = () => {
-        setIsMenuClicked(!isMenuClicked)
-    }
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return (
         <div className='header-wrapper'>
-            <div></div>
-            <h1 className='logo'>olaDEV</h1>
-            <div className='icon-menu-wrapper'>{isMenuClicked ? <MobileMenu /> : <span  className='menu-icon' onClick={handleClick}><RiMenu2Fill /></span>}</div>
+            <h1 className='logo'>
+            <Link to='/' className='logo-link'>
+          olaDEV
+        </Link></h1>
+            <div><Hamburger isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+        <Navigation isMenuOpen={isMenuOpen} setModalOpen={setIsMenuOpen} />
+        </div>
         </div>
     )
 }
