@@ -1,0 +1,40 @@
+const projectLinks = [
+    {
+      id: 1,
+      title: 'Bucket List',
+      url: 'https://bucklist.netlify.app',
+      // src: bucketlist,
+    },
+    {
+      id: 2,
+      title: 'Color Shade Generator',
+      url: 'https://colorgene.netlify.app',
+      // src: colorShade,
+    },
+    {
+      id: 3,
+      title: 'University Website',
+      url: 'https://school-app-osarodev.vercel.app/',
+      // src: universityWebsite,
+    },
+    {
+      id: 4,
+      title: 'Weather App',
+      url: 'https://weathn.netlify.app/',
+      // src: weatherApp,
+    },
+    {
+      id: 5,
+      title: 'Tour Destinations',
+      url: 'https://tourmx.netlify.app',
+      // src: toursApp,
+    },
+    {
+      id: 6,
+      title: 'Form Control',
+      url: 'https://osarodev-form.netlify.app/',
+      // src: formApp,
+    },
+  ];
+  
+  export default projectLinks;
