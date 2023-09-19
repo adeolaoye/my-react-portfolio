@@ -3,7 +3,6 @@ import { RiMailSendFill } from 'react-icons/ri'
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { BsFillTelephoneFill} from "react-icons/bs";
 
-
 const Contact = () => {
     return  (
         <div id='contact' className='contact'>
