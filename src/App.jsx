@@ -1,7 +1,6 @@
 import React from 'react'
 import './App.css'
-import Bio from './components/Bio'
-import Header from './components/Header'
+import Bio from './components/HomePage'
 
 
 function App() {
