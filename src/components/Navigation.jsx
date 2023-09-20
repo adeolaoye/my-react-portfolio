@@ -6,6 +6,7 @@ const Navigation = ({ isMenuOpen, setModalOpen }) => {
   return (
     <nav
       className={`modal-container ${isMenuOpen ? 'full-modal-container' : ''}`}
+      style={{backgroundColor: '#ffedd5'}}
     >
       <ul className={`modal-content ${isMenuOpen ? 'full-modal-content' : ''}`}>
         <li>

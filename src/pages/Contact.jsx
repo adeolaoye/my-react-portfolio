@@ -6,7 +6,6 @@ import { BsFillTelephoneFill} from "react-icons/bs";
 const Contact = () => {
     return  (
         <div id='contact' className='contact'>
-          
           <h2 className='contact-header'>Contact Me</h2>
           <form name='contact' method='POST' className='formstyle'>
             <input type='hidden' name='form-name' value='contact' />

@@ -7,7 +7,7 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return (
-        <div className='header-wrapper'>
+        <div className='header-wrapper' style={{backgroundColor: '#ffedd5'}}>
             <h1 className='logo'>
             <Link to='/' className='logo-link'>
           olaDEV

@@ -3,7 +3,7 @@ import projectLinks from '../components/projectLinks.json';
 
 const Projects = () => {
   return (
-    <div id='projects'>
+    <div className='projects'>
     
       <h2 className='projects-header'>Projects</h2>
       <div
@@ -14,7 +14,7 @@ const Projects = () => {
           justifyContent: 'space-around',
           alignItems: 'center',
           flexWrap: 'wrap',
-          margin: '2rem 0',
+          padding: '2rem 0',
         }}
       >
         {projectLinks.map((project) => {
